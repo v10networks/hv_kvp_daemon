@@ -1,7 +1,7 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-AC_PREREQ([2.67])
+AC_PREREQ([2.63])
 AC_INIT(hv-kvp, git, [BUG-REPORT-ADDRESS])
 AM_INIT_AUTOMAKE(hv-kvp, git)
 AC_CONFIG_SRCDIR([hv_kvp_daemon.c])
