@@ -1,7 +1,9 @@
-hv_kvp_daemon - Automaked version
+hv_daemon_tools - Automaked version
 
-hv_kvp_daemon is a program where it communicates with a Hyper-V parent partition with the system's information such as Network Addresses and anything that the host may wish to share with the guest.
+hv_kvp_daemon is a daemon where it communicates with the Hyper-V parent partition with the system's information such as Network Addresses and anything that the host may wish to share with the guest.
 
-The version included here was copied from the git tree as of Febuarary 17, 2013 and adapted to make it work nicely with automake (such as checking for the presence of hyperv.h). This daemon should build on all systems regardless if it is a Hyper-V guest partition or not.
+hv_vss_daemon is a daemon where it invokes the freeze operation when the Hyper-V parent partition is performing a backup of all the running Hyper-V virtual machines.
 
-To install, you can always pull the "./configure; make install" procedure.
+The daemons included here was copied from the git tree as of March 14, 2013 and adapted to make it work nicely with automake (such as checking for the presence of hyperv.h). The daemons should build on most systems regardless if it is a Hyper-V guest partition or not.
+
+To install, you can always perform the "./configure; make install" procedure.
