@@ -8,7 +8,7 @@ then
 	chkconfig --add hv_kvp_daemon
 	chkconfig --add hv_vss_daemon
 
-	chkconfig hv_kvp_dameon on
+	chkconfig hv_kvp_daemon on
 	chkconfig hv_vss_daemon on
 fi
 
