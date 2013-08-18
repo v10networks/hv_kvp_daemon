@@ -1,0 +1,25 @@
+#!/bin/bash
+
+if [ -f /etc/redhat-release ]
+then
+	cp init/hv_vss_daemon.rhel /etc/init.d/hv_vss_daemon
+	cp init/hv_kvp_daemon.rhel /etc/init.d/hv_kvp_daemon
+	
+	chkconfig --add hv_kvp_daemon
+	chkconfig --add hv_vss_daemon
+
+	chkconfig hv_kvp_dameon on
+	chkconfig hv_vss_daemon on
+fi
+
+if [ -f /etc/network/interfaces ]
+then
+        cp init/hv_vss_daemon.deb /etc/init.d/hv_vss_daemon
+        cp init/hv_kvp_daemon.deb /etc/init.d/hv_kvp_daemon
+
+	update-rc.d hv_vss_daemon enable
+	update-rc.d hv_kvp_daemon enable
+	
+	update-rc.d hv_vss_daemon defaults
+	update-rc.d hv_kvp_dameon defaults
+fi
