@@ -21,6 +21,10 @@
  *
  */
 
+/* Define _GNU_SOURCE if O_CLOEXEC is not defined. Debian Squeeze ckokes if _GNU_SOURCE isn't defined */
+#ifndef O_CLOEXEC
+#define _GNU_SOURCE
+#endif
 
 #include <sys/types.h>
 #include <sys/socket.h>
