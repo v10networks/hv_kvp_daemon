@@ -21,5 +21,5 @@ then
 	update-rc.d hv_kvp_daemon enable
 	
 	update-rc.d hv_vss_daemon defaults
-	update-rc.d hv_kvp_dameon defaults
+	update-rc.d hv_kvp_daemon defaults
 fi
