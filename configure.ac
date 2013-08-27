@@ -17,7 +17,7 @@ AC_PROG_CC
 
 # Checks for header files.
 AC_CHECK_HEADERS([arpa/inet.h fcntl.h mntent.h netdb.h stdlib.h string.h sys/ioctl.h sys/socket.h syslog.h unistd.h])
-AC_CHECK_HEADER(linux/hyperv.h, ,[AC_MSG_RESULT(Using our copy of hyperv.h then)])
+AC_CHECK_HEADERS(linux/hyperv.h, ,[AC_MSG_RESULT(Using our copy of hyperv.h then)])
 
 # Checks for typedefs, structures, and compiler characteristics.
 AC_HEADER_STDBOOL
