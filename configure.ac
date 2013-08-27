@@ -8,6 +8,7 @@ AC_OUTPUT(Makefile src/Makefile)
 
 AC_CONFIG_SRCDIR([src/hv_kvp_daemon.c])
 AC_CONFIG_HEADERS([config.h])
+AC_PREFIX_DEFAULT(/usr)
 
 # Checks for programs.
 AC_PROG_CC
