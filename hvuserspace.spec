@@ -47,6 +47,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %preun
 /sbin/chkconfig --del hv_kvp_daemon
-/sbin/chkconfig --del hv_kvp_daemon
+/sbin/chkconfig --del hv_vss_daemon
 
 %changelog
