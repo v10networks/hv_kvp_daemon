@@ -43,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 /sbin/chkconfig --add hv_vss_daemon
 
 /sbin/chkconfig hv_kvp_daemon on
-/sbin/chkconfig hv_vss_daemon off
+/sbin/chkconfig hv_vss_daemon on
 
 %preun
 /sbin/chkconfig --del hv_kvp_daemon
