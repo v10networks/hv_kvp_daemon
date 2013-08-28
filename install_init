@@ -2,8 +2,8 @@
 
 if [ -f /etc/redhat-release ]
 then
-	cp init/hv_vss_daemon.rhel /etc/init.d/hv_vss_daemon
-	cp init/hv_kvp_daemon.rhel /etc/init.d/hv_kvp_daemon
+	cp init/rhel/hv_vss_daemon /etc/init.d/hv_vss_daemon
+	cp init/rhel/hv_kvp_daemon /etc/init.d/hv_kvp_daemon
 	
 	chkconfig --add hv_kvp_daemon
 	chkconfig --add hv_vss_daemon
@@ -14,8 +14,8 @@ fi
 
 if [ -f /etc/network/interfaces ]
 then
-        cp init/hv_vss_daemon.deb /etc/init.d/hv_vss_daemon
-        cp init/hv_kvp_daemon.deb /etc/init.d/hv_kvp_daemon
+        cp init/deb/hv_vss_daemon /etc/init.d/hv_vss_daemon
+        cp init/deb/hv_kvp_daemon /etc/init.d/hv_kvp_daemon
 
 	update-rc.d hv_vss_daemon enable
 	update-rc.d hv_kvp_daemon enable

@@ -1,2 +1,4 @@
 AUTOMAKE_OPTIONS = foreign
-SUBDIRS = src # doc examples man scripts
+SUBDIRS = src init # doc examples man scripts
+
+dist_noinst_SCRIPTS = install_init

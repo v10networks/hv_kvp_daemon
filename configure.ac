@@ -4,7 +4,7 @@
 AC_PREREQ([2.63])
 AC_INIT(hv_userspace_daemon, 0.1, bugs@v10networks,ca)
 AM_INIT_AUTOMAKE(hv_userspace_daemon, 0.1)
-AC_OUTPUT(Makefile src/Makefile)
+AC_OUTPUT(Makefile src/Makefile init/Makefile init/deb/Makefile init/rhel/Makefile)
 
 AC_CONFIG_SRCDIR([src/hv_kvp_daemon.c])
 AC_CONFIG_HEADERS([config.h])
