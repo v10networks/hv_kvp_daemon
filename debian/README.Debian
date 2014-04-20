@@ -1,0 +1,6 @@
+hv-userspace-daemons for Debian
+-------------------------------
+
+Build package with debuild -i -us -uc -b command
+
+ -- Jeff Leung <jleung@v10networks.ca>  Sat, 19 Apr 2014 21:33:18 -0500

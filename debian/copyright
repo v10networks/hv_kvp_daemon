@@ -1,0 +1,36 @@
+This work was packaged for Debian by:
+
+    Jeff Leung <jleung@v10networks.ca> on Sat, 19 Apr 2014 21:33:18 -0500
+
+It was downloaded from:
+
+    https://github.com/v10networks/hv_kvp_daemon 
+
+Upstream Author(s):
+
+    Microsoft Corporation
+    KY Srinivasan <kys@microsoft.com>
+
+Copyright:
+
+    Copyright (C) 2013 Microsoft Corporation
+
+License:
+
+    GPLv2
+
+The Debian packaging is:
+
+    Copyright (C) 2014 Jeff Leung <jleung@v10networks.ca>
+
+# Please chose a license for your packaging work. If the program you package
+# uses a mainstream license, using the same license is the safest choice.
+# Please avoid to pick license terms that are more restrictive than the
+# packaged work, as it may make Debian's contributions unacceptable upstream.
+# If you just want it to be GPL version 3, leave the following lines in.
+
+and is licensed under the 2-Clause BSD License 
+see "/usr/share/common-licenses/BSD".
+
+# Please also look if there are files or directories which have a
+# different copyright/license attached and list them here.

@@ -1,0 +1,15 @@
+Source: hv-userspace-daemons
+Section: unknown
+Priority: extra
+Maintainer: Jeff Leung <jleung@v10networks.ca>
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev
+Standards-Version: 3.8.4
+Homepage: http://github.v10networks.ca 
+Vcs-Git: git://github.com/v10networks/hv_kvp_daemon.git 
+Vcs-Browser: https://github.com/v10networks/hv_kvp_daemon 
+
+Package: hv-userspace-daemons
+Architecture: i386 amd64 
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Hyper-V Userspace Daemons 
+ This package contains the userspace daemons to interact with the VSS and KVP functionality provided by the Microsoft Hyper-V Virtualization platform.
